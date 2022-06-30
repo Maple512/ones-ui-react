@@ -1,40 +1,50 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+# /src/assets/color.less
+delon-builds
+scripts/var.less
+# src/assets/style.dark.css
+# src/assets/style.compact.css
 
 # dependencies
-**/node_modules
-# roadhog-api-doc ignore
-/src/utils/request-temp.js
-_roadhog-api-doc
+/node_modules
+/yarn.lock
 
-# production
-/dist
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 # misc
-.DS_Store
-npm-debug.log*
-yarn-error.log
-
+/.angular/cache
+/.sass-cache
+/connect.lock
 /coverage
-.idea
-yarn.lock
-package-lock.json
-pnpm-lock.yaml
-*bak
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+yarn-error.log
+/_all.less
 
+# e2e
+/e2e/*.map
 
-# visual studio code
-.history
-*.log
-functions/*
-.temp/**
-
-# umi
-.umi
-.umi-production
-
-# screenshot
-screenshot
-.firebase
-.eslintcache
-
-build
+# System Files
+.DS_Store
+Thumbs.db
